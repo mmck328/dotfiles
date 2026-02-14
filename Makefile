@@ -1,4 +1,6 @@
 .PHONY: all xcode link defaults brew
+.DEFAULT_GOAL := all
+
 all: xcode link defaults brew
 
 # Setup xcode command line tools

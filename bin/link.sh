@@ -41,8 +41,8 @@ link_dotfiles() {
 
 # Link dotfiles from the repository to the home directory
 for dotfile in "$DOTFILES_DIR"/*; do
-    # Skip ., .., .git and .DS_Store
-    if [[ "$(basename "$dotfile")" =~ ^(\.|\.\.|\.git|\.DS_Store)$ ]]; then
+    # Skip ., .., .git, .github and .DS_Store
+    if [[ "$(basename "$dotfile")" =~ ^(\.|\.\.|\.git(hub)?|\.DS_Store)$ ]]; then
         continue
     fi
 
