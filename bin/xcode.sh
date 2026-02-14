@@ -3,4 +3,7 @@
 set -eu
 
 # Install xcode
-xcode-select --install
+if ! xcode-select --print-path &> /dev/null; then
+	echo "Installing Xcode Command Line Tools"
+	xcode-select --install
+fi
