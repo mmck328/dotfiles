@@ -37,7 +37,7 @@ link_dotfiles() {
             echo "Backed up $dest to $backup_dst"
         fi
 
-        ln -snv "$src" "$dest"
+        ln -snvf "$src" "$dest"
     fi
 }
 
