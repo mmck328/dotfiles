@@ -2,7 +2,7 @@
 
 set -eux
 
-DOTFILES_DIR="$(cd "$(dirname "$0")" && pwd)"
+DOTFILES_DIR="$(cd "$(dirname "$0")/../" && pwd)"
 BACKUP_DIR="/tmp/dotfiles_backup_$(date +%Y%m%d%H%M%S)"
 
 read -p "This will replace the existing dotfiles with symbolic links to the ones in this repository. Do you want to continue? (y/n) " -n 1 -r
@@ -42,7 +42,7 @@ link_dotfiles() {
 }
 
 # Link dotfiles from the repository to the home directory
-for dotfile in "$DOTFILES_DIR"/*; do
+for dotfile in "$DOTFILES_DIR"/.*; do
     # Skip ., .., .git, .github and .DS_Store
     if [[ "$(basename "$dotfile")" =~ ^(\.|\.\.|\.git(hub)?|\.DS_Store)$ ]]; then
         continue
