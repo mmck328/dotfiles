@@ -1,0 +1,11 @@
+[user]
+	name = mmck328
+	email = mmck328@users.noreply.github.com
+[pull]
+	ff = only
+[core]
+	autocrlf = input
+	safecrlf = true
+	quotepath = false
+[alias]
+	ignore = "!gi() { curl -sL https://www.toptal.com/developers/gitignore/api/$@ ;}; gi"
