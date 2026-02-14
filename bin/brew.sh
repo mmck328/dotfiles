@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -eu
+set -eux
 
 # Install brew
 if command -v brew >/dev/null 2>&1; then

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -eu
+set -eux
 
 DOTFILES_DIR="$(cd "$(dirname "$0")" && pwd)"
 BACKUP_DIR="/tmp/dotfiles_backup_$(date +%Y%m%d%H%M%S)"

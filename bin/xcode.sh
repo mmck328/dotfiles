@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -eu
+set -eux
 
 # Install xcode
 if ! xcode-select --print-path &> /dev/null; then
