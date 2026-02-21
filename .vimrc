@@ -1,5 +1,4 @@
 syntax on
-colorscheme monokai
 set t_Co=256
 set whichwrap=b,s,h,l,<,>,[,],~
 
