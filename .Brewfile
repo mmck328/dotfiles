@@ -40,3 +40,4 @@ cask "visual-studio-code"
 cask "vlc"
 cask "wireshark-app"
 cask "zoom"
+mas "LINE", id: 539883307
