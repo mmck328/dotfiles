@@ -30,8 +30,8 @@ defaults write com.apple.dock show-recents -bool false
 defaults write com.apple.finder AppleShowAllFiles -bool true
 ## Show path bar
 defaults write com.apple.finder ShowPathbar -bool true
-## Show full POSIX path as Finder window title
-defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+## Show in column view
+defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
 ## Keep folders on top when sorting by name
 defaults write com.apple.finder _FXSortFoldersFirst -bool true
 
