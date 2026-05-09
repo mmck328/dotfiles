@@ -14,8 +14,13 @@ if [ -f "$(brew --prefix asdf)/libexec/asdf.sh" ]; then
 fi
 
 # kubectl
-if [ -f "$(brew --prefix)/opt/kubectl/bin/kubectl" ]; then
+if [ -f "$(brew --prefix kubectl)/bin/kubectl" ]; then
     source <(kubectl completion zsh)
+fi
+
+# colima
+if [ -f "$(brew --prefix colima)/bin/colima" ]; then
+    source <(colima completion zsh)
 fi
 
 # zsh-autosuggestions
