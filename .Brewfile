@@ -1,4 +1,5 @@
 tap "cartr/qt4"
+brew "asdf"
 brew "autoconf"
 brew "glib"
 brew "cairo"

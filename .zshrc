@@ -10,6 +10,7 @@ compinit -u
 # asdf
 if [ -f "$(brew --prefix asdf)/libexec/asdf.sh" ]; then
     source "$(brew --prefix asdf)/libexec/asdf.sh"
+    source <(asdf completion zsh)
 fi
 
 # kubectl
