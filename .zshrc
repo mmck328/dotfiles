@@ -2,25 +2,14 @@ alias ls="ls -G"
 alias ll="ls -lG"
 alias la="ls -laG"
 
-# git auto completion
+# auto completion
 fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
 autoload -Uz compinit
 compinit -u
 
-# asdf
-if [ -f "$(brew --prefix asdf)/libexec/asdf.sh" ]; then
-    source "$(brew --prefix asdf)/libexec/asdf.sh"
-    source <(asdf completion zsh)
-fi
-
 # kubectl
 if [ -f "$(brew --prefix kubectl)/bin/kubectl" ]; then
     source <(kubectl completion zsh)
-fi
-
-# colima
-if [ -f "$(brew --prefix colima)/bin/colima" ]; then
-    source <(colima completion zsh)
 fi
 
 # gcloud
